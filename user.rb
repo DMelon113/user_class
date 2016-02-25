@@ -22,6 +22,39 @@
 				#(in this case, photos will be represented by strings like this: "img.jpg")
 
 
+class User
+	def initialize(email, birthday, password)
+		@email = email
+		@birthday = birthday
+		@password = password
+		end
+
+		def change_email(new_email)
+			@email = email
+		end
+		def email
+			@email
+		end
+		def birthday
+			@birthday
+		end
+		def password
+			@password
+		end
+		def username(name)
+			@name = name
+		end
+		def user_name
+			@name
+		end
+end
+
+dean = User.new("dmelonid@lsoc.org", "June 12 2000", "CompSci")
+puts dean.email
+puts dean.birthday
+puts dean.password
+puts dean.user_name("Dmelon")
+puts dean.username
 
 
 
